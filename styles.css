@@ -165,3 +165,20 @@ footer p {
 .resume-link:hover {
   background-color: #2a4373;
 }
+
+#project-image {
+  display: none; /* Image is hidden initially */
+  max-width: 100%;
+  height: auto;
+}
+#view-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#view-button:hover {
+  background-color: #0056b3;
+}

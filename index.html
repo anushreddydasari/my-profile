@@ -22,15 +22,37 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Dasari Anush Reddy, a final-year B.Tech student specializing in Data Science. I love coding, designing, and learning new technologies.</p>
+        <p>Hi, I'm Dasari Anush Reddy, a final-year B.Tech student specializing in Data Science. I am always intersted to learning new technologies.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project Name</h3>
-            <p>Brief description of the project.</p>
-            <a href="project-link.html">View Project</a>
+            <h3>Heart Disease prediction using Data Science</h3>
+            <p>This project uses the Random Forest algorithm in Python to predict heart disease risk, based on a dataset of patients from the last 20 years. The model trains on various health features to identify patterns and forecast potential heart conditions. It aims to enable early detection and improve preventive healthcare strategies.
+                .</p>
+               <!-- <img src="hdp.jpg" alt="Project Image">-->
+               <img id="project-image" src="hdp.jpg" alt="Project Image">
+            </div>
+            <button id="view-button">View Image</button>
+        
+            <script>
+                const button = document.getElementById('view-button');
+                const image = document.getElementById('project-image');
+        
+                button.addEventListener('click', () => {
+                    if (image.style.display === 'block') {
+                        image.style.display = 'none'; // Hide the image
+                        button.textContent = 'View Above Project Image'; // Change button text
+                    } else {
+                        image.style.display = 'block'; // Show the image
+                        button.textContent = 'Close Image'; // Change button text
+                    }
+                });
+            </script>
+            
+        
+    
         </div>
     </section>
 
@@ -38,8 +60,11 @@
         <h2>Skills</h2>
         <ul>
             <li>Python</li>
-            <li>SQL</li>
-            <li>Linux,awsS</li>
+            <li>Data science</li>
+            <li>MYSQL</li>
+            <li>AWS</li>
+            <li>Linux</li>
+
             <!-- Add more skills -->
         </ul>
     </section>
@@ -51,23 +76,10 @@
         <a href="resume.pdf" target="_blank" class="resume-link">View My Resume</a>
         <br>
         <a href="resume.pdf" download class="resume-link">Download My Resume</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    
 
     <footer>
-        <p>© 2024 [Your Name]. All Rights Reserved.</p>
+        <p>© 2024 anush. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
