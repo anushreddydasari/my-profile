@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Space Designer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Smart Space Designer</h1>
+        <nav>
+            <a href="../index.html" class="nav-link">← Back to Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="designer-section">
+            <h2>Optimize Your Room or Space Layout</h2>
+            <form id="designer-form" class="designer-form" autocomplete="off">
+                <label>
+                    Room Type:
+                    <select name="roomType" id="roomType" required>
+                        <option value="">Select type</option>
+                        <option value="Bedroom">Bedroom</option>
+                        <option value="Living Room">Living Room</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Office">Office</option>
+                        <option value="Shop">Shop</option>
+                        <option value="Custom">Custom</option>
+                    </select>
+                </label>
+                <div class="dimension-group">
+                    <label>
+                        Length (ft):
+                        <input type="number" min="1" step="1" name="length" id="length" required>
+                    </label>
+                    <label>
+                        Width (ft):
+                        <input type="number" min="1" step="1" name="width" id="width" required>
+                    </label>
+                </div>
+                <label>
+                    Requirements (comma-separated, e.g., '2 beds, 1 bathroom'):
+                    <input type="text" name="requirements" id="requirements" placeholder="Describe requirements" required>
+                </label>
+                <button type="submit" class="submit-btn">Suggest Layout</button>
+            </form>
+            <div id="designer-output" class="designer-output"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 anush. All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
